@@ -10,7 +10,7 @@ const { validarJWT } = require('../middlewares/validar-jwt');
 const router = Router();
 
 router.post('/calcular', [
-    validarJWT,
+    // validarJWT,
     check('activoCorriente', 'El activo corriente es obligatorio y debe ser un número').isNumeric(),
     check('pasivoCorriente', 'El pasivo corriente es obligatorio y debe ser un número').isNumeric(),
     check('disponible', 'El disponible es obligatorio y debe ser un número').isNumeric(),

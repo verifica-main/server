@@ -32,8 +32,9 @@ exports.calcularIndicadoresRentabilidad = async (req, res) => {
         });
 
         await nuevaRentabilidad.save();
-        console.log('Datos de rentabilidad guardados correctamente.');
+        // console.log('Datos de rentabilidad guardados correctamente.');
 
+        // send email main TODO: update 
         // Generar el documento PDF
         const filename = `Rentabilidad-${Date.now()}.pdf`;
         const filepath = path.join(__dirname, '..', 'pdfs', filename);

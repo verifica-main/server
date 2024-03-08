@@ -6,6 +6,18 @@ const UsuarioSchema = Schema({
         type: String,
         required: true
     },
+    nameEmpresa: {
+        type: String,
+        required: false
+    },
+    nit: {
+        type: String,
+        required: false
+    },
+    terminos: {
+        type: String,
+        required: true
+    },
     email: {
         type: String,
         required: true,
@@ -27,6 +39,7 @@ const UsuarioSchema = Schema({
         type: Boolean,
         default: false
     },
+    
 });
 
 
