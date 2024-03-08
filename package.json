@@ -2,9 +2,12 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "funtions/index.js",
+  "type": "commonjs",
   "scripts": {
-    "dev": "nodemon index.js"
+    "build": "netlify deploy --prod",
+    "dev": "nodemon funtions/index.js",
+    "start": "nodemon funtions/index.js"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +22,9 @@
     "google-auth-library": "^6.0.3",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^8.2.0",
+    "nodemon": "^3.1.0",
     "pdfkit": "^0.14.0",
+    "serverless-http": "^3.2.0",
     "uuid": "^8.2.0"
   }
 }
